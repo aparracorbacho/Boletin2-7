@@ -30,8 +30,10 @@ public class Boletin27 {
         anos = anosTeclado.nextFloat();
         float t = anos*12;
         float interes = (intereseanual/1200);
-        System.out.println("A renda mensual ten que ser: "+(nominal*(Math.pow(1+interes,t)*interes))/(Math.pow((1+interes),t)-1) );
+        //System.out.println("A renda mensual ten que ser: "+(nominal*(Math.pow(1+interes,t)*interes))/(Math.pow((1+interes),t)-1) );
+        double total = (nominal*(Math.pow(1+interes,t)*interes))/(Math.pow((1+interes),t)-1);
         
+        System.out.printf("La renta mensual seria %.2f ",total);
                
     }
     
